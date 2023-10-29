@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.ui.fragment.RegistrationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="@dimen/medium_size">
+
+        <TextView
+            android:id="@+id/titleRegisterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:text="@string/regis_title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subTitleRegisterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_size"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:text="@string/regis_subTitle"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/titleRegisterTextView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/medium_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleRegisterTextView">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/centerGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/citizenIDTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/regis_citizen_identity_number"
+                app:hintTextColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/firstNameTHTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:hint="@string/regis_firstname_th"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/citizenIDTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastNameTHTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:hint="@string/regis_lastname_th"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                app:layout_constraintTop_toBottomOf="@+id/citizenIDTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/firstNameENTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_size"
+                android:layout_marginEnd="@dimen/medium_size"
+                android:hint="@string/regis_firstname_en"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameTHTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="@string/app_en_digit"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastNameEBTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_size"
+                android:layout_marginTop="@dimen/medium_size"
+                android:hint="@string/regis_lastname_en"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameTHTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="@string/app_en_digit"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateOfBirthTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_size"
+                android:hint="@string/regis_date_of_birth"
+                app:hintTextColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/lastNameEBTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateOfBirthTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/regular"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_size"
+                android:hint="@string/regis_phone_number"
+                app:hintTextColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/dateOfBirthTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/eMailTextField"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_size"
+                android:hint="@string/regis_email"
+                app:hintTextColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/phoneTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registrationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/regular"
+                android:text="@string/regis_register_title"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/multipleFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

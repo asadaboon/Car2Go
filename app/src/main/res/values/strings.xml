@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Car2Go</string>
+    <string name="app_version">V 1.0.0</string>
+    <string name="app_en_digit">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ !@#$%^*?</string>
+
+    <!--Registration-->
+    <string name="regis_title">สมัครใช้งาน</string>
+    <string name="regis_subTitle">สมาชิก Car2Go Auto</string>
+    <string name="regis_image_profile_description">รายละเอียดรูปภาพผู้สมัคร</string>
+    <string name="regis_image_profiles">รูปภาพผู้สมัคร</string>
+    <string name="regis_image_car_profile">ผู้สมัครสมาชิกจำเป็นต้องอัพโหลดรูปรถยนต์ \n เพื่อเป็นข้อมูลสำหรับการสมัครสมาชิก</string>
+    <string name="regis_user_name">ชื่อผู้ใช้</string>
+    <string name="regis_phone_number">เบอร์โทรศัทพ์</string>
+    <string name="regis_citizen_identity_number">เลขประจำตัวประชาชน</string>
+    <string name="regis_firstname_th">ชื่อภาษาไทย</string>
+    <string name="regis_lastname_th">สกุลภาษาไทย</string>
+    <string name="regis_firstname_en">ชื่อภาษาอังกฤษ</string>
+    <string name="regis_lastname_en">สกุลภาษาอังกฤษ</string>
+    <string name="regis_email">อีเมล</string>
+    <string name="regis_date_of_birth">วัน/เดือน/ปี/เกิด</string>
+    <string name="regis_register_next_step_title">ถัดไป</string>
+    <string name="regis_register_title">สมัคร</string>
+    <string name="regis_confirm_register_title">ยืนยัน</string>
+    <string name="regis_ok_title">ตกลง</string>
+    <string name="regis_success">สร้างบัญชีสำเร็จ</string>
+
+    <!--Profile-->
+    <string name="profile_title">โปรไฟล์</string>
+    <string name="profile_personal_data_title">ข้อมูลส่วนตัว</string>
+    <string name="profile_prefix_firstname_th">คำนำนามหน้า(ภาษาไทย)</string>
+    <string name="profile_prefix_lastname_th">นามสกุล(ภาษาไทย)</string>
+    <string name="profile_prefix_firstname_en">คำนำนามหน้า(ภาษาอังกฤษ)</string>
+    <string name="profile_prefix_lastname_en">นามสกุล(ภาษาอังกฤษ)</string>
+    <string name="profile_firstname_th">ชื่อ (ภาษาไทย)</string>
+    <string name="profile_firstname_en">นามสกุล (ภาษาไทย)</string>
+    <string name="profile_lastname_th">ชื่อ (ภาษาอังกฤษ)</string>
+    <string name="profile_lastname_en">นามสกุล (ภาษาอังกฤษ)</string>
+    <string name="profile_date_of_birth">วัน/เดือน/ปี/เกิด</string>
+    <string name="profile_citizen_identity_number">เลขประจำตัวประชาชน</string>
+    <string name="profile_email">อีเมล</string>
+    <string name="profile_phone">เบอร์โทรศัทพ์</string>
+    <string name="profile_car_image">รถคันจริง</string>
+
+    <!--Validate-->
+    <string name="validate_firstname_th">กรุณาระบุชื่อ (ภาษาไทย)</string>
+    <string name="validate_lastname_th">กรุณาระบุชื่อ (ภาษาอังกฤษ)</string>
+    <string name="validate_firstname_en">กรุณาระบุนามสกุล (ภาษาไทย)</string>
+    <string name="validate_lastname_en">กรุณาระบุนามสกุล (ภาษาอังกฤษ)</string>
+    <string name="validate_date_of_birth">กรุณาระบุวัน/เดือน/ปี/เกิด</string>
+    <string name="validate_citizen_identity_number">กรุณาระบุเลขประจำตัวประชาชน</string>
+    <string name="validate_citizen_identity_number_error">เลขประจำตัวประชาชนไม่ถูกต้อง</string>
+    <string name="validate_email">กรุณาระบุอีเมล</string>
+    <string name="validate_email_error">อีเมลไม่ถูกต้อง</string>
+    <string name="validate_phone_number">กรุณาระบุเบอร์โทรศัทพ์</string>
+    <string name="validate_phone_number_error">เบอร์โทรศัทพ์ไม่ถูกต้อง</string>
+    <string name="validate_image_number_error">กรุณาใส่รูปส่วนตัวหรือรูปรถยนต์คันจริง</string>
+
+</resources>

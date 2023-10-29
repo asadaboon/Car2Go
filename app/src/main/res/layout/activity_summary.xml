@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.ui.activity.SummaryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_size">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subTitleRegisterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_size"
+                android:fontFamily="@font/regular"
+                android:gravity="center_horizontal"
+                android:text="@string/profile_personal_data_title"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/medium_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subTitleRegisterTextView">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileRegisterImageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/profileRegisterImageView">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/centerGuideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.40" />
+
+                    <TextView
+                        android:id="@+id/profileFirstnameTHTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/profile_firstname_th"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/profileLastnameTHTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profileFirstnameTHTextView"
+                        tools:text="อัษฎา" />
+
+                    <TextView
+                        android:id="@+id/profileFirstnameENTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/profile_firstname_en"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileFirstnameTHTextView" />
+
+                    <TextView
+                        android:id="@+id/profileLastnameENTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profileFirstnameENTextView"
+                        tools:text="บุญธรรม" />
+
+                    <TextView
+                        android:id="@+id/profileDateOfBirthTitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/regis_date_of_birth"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileFirstnameENTextView" />
+
+                    <TextView
+                        android:id="@+id/profileDateOfBirthTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profileDateOfBirthTitleTextView"
+                        tools:text="28 กรกฎาคม 2538" />
+
+                    <TextView
+                        android:id="@+id/profileCitizenIdentityNumberTitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/profile_citizen_identity_number"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileDateOfBirthTitleTextView" />
+
+                    <TextView
+                        android:id="@+id/profileCitizenIdentityNumberTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profileCitizenIdentityNumberTitleTextView"
+                        tools:text="1339900405555" />
+
+                    <TextView
+                        android:id="@+id/profilePhoneTitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/profile_email"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileCitizenIdentityNumberTitleTextView" />
+
+                    <TextView
+                        android:id="@+id/profilePhoneTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profilePhoneTitleTextView"
+                        tools:text="099-381-34-34" />
+
+                    <TextView
+                        android:id="@+id/profileEmailTitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_size"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/profile_phone"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/centerGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profilePhoneTitleTextView" />
+
+                    <TextView
+                        android:id="@+id/profileEmailTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/centerGuideline"
+                        app:layout_constraintTop_toTopOf="@+id/profileEmailTitleTextView"
+                        tools:text="asadaboontham@outlook.com" />
+
+                    <ImageView
+                        android:id="@+id/profileCarRegisterImageView"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/extra_large_size"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileEmailTitleTextView"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/profileCarRegisterTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_size"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/profile_car_image"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileCarRegisterImageView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

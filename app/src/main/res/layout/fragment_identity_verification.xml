@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".presentation.ui.fragment.IdentityVerificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="@dimen/medium_size">
+
+        <TextView
+            android:id="@+id/titleRegisterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:text="@string/regis_title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subTitleRegisterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_size"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:text="@string/regis_image_profile_description"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/titleRegisterTextView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/medium_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleRegisterTextView">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileRegisterImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/profileRegisterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_size"
+                android:fontFamily="@font/regular"
+                android:gravity="center_horizontal"
+                android:text="@string/regis_image_profiles"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/profileRegisterImageView" />
+
+            <ImageView
+                android:id="@+id/profileCarRegisterImageView"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/extra_large_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileRegisterTextView" />
+
+            <TextView
+                android:id="@+id/profileCarRegisterTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/small_size"
+                android:fontFamily="@font/regular"
+                android:gravity="center_horizontal"
+                android:text="@string/regis_image_car_profile"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/nextButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCarRegisterImageView" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/regular"
+                android:text="@string/regis_register_next_step_title"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/multipleFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
